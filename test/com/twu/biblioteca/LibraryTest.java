@@ -20,24 +20,29 @@ public class LibraryTest {
     @Test
     public void showBookList_should_return_one_book_when_only_one_book_is_available() throws Exception {
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book("Moby Dick"));
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851));
         Library library = new Library(bookList);
         String result = library.showBookList();
 
-        assertEquals("Moby Dick\n", result);
+        assertEquals("|Moby Dick                                         |Herman Melville     |1851|\n", result);
     }
 
 
     @Test
     public void showBookList_should_return_multiple_books_when_more_than_one_book_is_available() throws Exception {
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book("Moby Dick"));
-        bookList.add(new Book("Harry Potter"));
-        bookList.add(new Book("Lord of the Ring"));
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851));
+        bookList.add(new Book("Harry Potter", "J.K. Rowling", 1997));
+        bookList.add(new Book("Lord of the Ring", "J.R.R. Tolkien", 1954));
 
         Library library = new Library(bookList);
         String result = library.showBookList();
 
-        assertEquals("Moby Dick\nHarry Potter\nLord of the Ring\n", result);
+        String expected =
+                "|Moby Dick                                         |Herman Melville     |1851|\n" +
+                "|Harry Potter                                      |J.K. Rowling        |1997|\n" +
+                "|Lord of the Ring                                  |J.R.R. Tolkien      |1954|\n";
+
+        assertEquals(expected, result);
     }
 }

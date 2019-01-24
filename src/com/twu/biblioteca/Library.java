@@ -21,7 +21,6 @@ public class Library {
         StringBuilder books = new StringBuilder();
         for (Book book : bookList) {
             books.append(book);
-            books.append("\n");
         }
 
         return books.toString();
