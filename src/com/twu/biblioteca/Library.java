@@ -6,14 +6,24 @@ import java.util.List;
 
 public class Library {
 
-    private List<String> bookList;
+    private List<Book> bookList;
 
+    public Library(List<Book> bookList) {
+        this.bookList = bookList;
+    }
 
-    public void showBookList() throws EmptyBookListException {
+    public String showBookList() throws EmptyBookListException {
 
         if (bookList == null || bookList.isEmpty()) {
             throw new EmptyBookListException();
         }
 
+        StringBuilder books = new StringBuilder();
+        for (Book book : bookList) {
+            books.append(book);
+            books.append("\n");
+        }
+
+        return books.toString();
     }
 }
