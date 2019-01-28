@@ -1,10 +1,8 @@
 package com.twu.biblioteca;
 
-import com.twu.biblioteca.exception.EmptyBookListException;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 import static org.junit.Assert.assertEquals;
@@ -29,8 +27,7 @@ public class MenuTest {
     }
 
     @Test
-    public void showMainMenu_should_print_a_notification_when_the_input_is_invalid() throws EmptyBookListException {
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    public void showMainMenu_should_print_a_notification_when_the_input_is_invalid() throws Exception {
         Library library = mock(Library.class);
 
         String input = "6";
@@ -40,5 +37,19 @@ public class MenuTest {
         String result = menu.showMainMenu(library, inputStream);
 
         assertEquals("Please select a valid option.", result);
+    }
+
+    @Test
+    public void showMainMenu_should_return_the_goodbyw_message() throws Exception {
+        Library library = mock(Library.class);
+
+        String input = "2";
+        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+
+        Menu menu = new Menu();
+        String result = menu.showMainMenu(library, inputStream);
+
+        assertEquals("Good Bye", result);
+
     }
 }
