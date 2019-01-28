@@ -1,8 +1,11 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.exception.CheckOutException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
 import java.util.List;
+
+import static com.twu.biblioteca.Book.Availability;
 
 public class Library {
 
@@ -12,28 +15,15 @@ public class Library {
         this.bookList = bookList;
     }
 
-    public String showAllBooks() throws EmptyBookListException {
 
-        if (isBookListEmpty()) {
-            throw new EmptyBookListException();
-        }
-
-        StringBuilder books = new StringBuilder();
-        for (Book book : bookList) {
-            books.append(book);
-        }
-
-        return books.toString();
-    }
-
-    public String showAvailableBooks() throws EmptyBookListException {
+    public String showBooks() throws EmptyBookListException {
         if(isBookListEmpty()) {
             throw new EmptyBookListException();
         }
 
         StringBuilder books = new StringBuilder();
         for (Book book : bookList) {
-            if (book.getAvailability() == Book.Availability.AVAILABLE) {
+            if (book.getAvailability() == Availability.AVAILABLE) {
                 books.append(book);
             }
         }
@@ -44,5 +34,15 @@ public class Library {
 
     private boolean isBookListEmpty() {
         return bookList == null || bookList.isEmpty();
+    }
+
+    public void checkoutBook(Book book) throws CheckOutException {
+        Availability availability = book.getAvailability();
+        if (availability == Availability.RESERVED){
+            throw new CheckOutException();
+        }
+
+        book.setAvailability(Availability.RESERVED);
+
     }
 }

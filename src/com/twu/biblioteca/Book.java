@@ -12,6 +12,13 @@ public class Book {
     }
     private Availability availability;
 
+    public Book(String title, String author, int year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.availability = Availability.AVAILABLE;
+    }
+
     public Book(String title, String author, int year, Availability availability) {
         this.title = title;
         this.author = author;
@@ -21,6 +28,10 @@ public class Book {
 
     public Availability getAvailability() {
         return availability;
+    }
+
+    public void setAvailability(Availability availability) {
+        this.availability = availability;
     }
 
     @Override
