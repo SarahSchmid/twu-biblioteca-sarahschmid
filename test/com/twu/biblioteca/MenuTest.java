@@ -11,15 +11,18 @@ import static org.mockito.Mockito.when;
 
 public class MenuTest {
 
+    private InputStream provideInput(String input) {
+        return new ByteArrayInputStream(input.getBytes());
+    }
+
     @Test
-    public void showMainMenu_should_take_user_input_to_display_the_booklist() throws Exception {
+    public void showMainMenu_should_take_user_input_to_display_the_complete_booklist() throws Exception {
+        Menu menu = new Menu();
         Library library = mock(Library.class);
 
-        String input = "1";
-        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+        InputStream inputStream = provideInput("1");
 
-        Menu menu = new Menu();
-        when(library.showBookList()).thenReturn("this is a book list");
+        when(library.showAllBooks()).thenReturn("this is a book list");
 
         String result = menu.showMainMenu(library, inputStream);
 
@@ -27,29 +30,31 @@ public class MenuTest {
     }
 
     @Test
-    public void showMainMenu_should_print_a_notification_when_the_input_is_invalid() throws Exception {
+    public void showMainMenu_should_return_a_notification_when_the_input_is_invalid() throws Exception {
+        Menu menu = new Menu();
         Library library = mock(Library.class);
 
-        String input = "6";
-        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+        InputStream inputStream = provideInput("6");
 
-        Menu menu = new Menu();
         String result = menu.showMainMenu(library, inputStream);
 
         assertEquals("Please select a valid option.", result);
     }
 
     @Test
-    public void showMainMenu_should_return_the_goodbyw_message() throws Exception {
+    public void showMainMenu_should_return_the_goodbye_message() throws Exception {
+        Menu menu = new Menu();
         Library library = mock(Library.class);
 
-        String input = "2";
-        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+        String input = "9";
+        InputStream inputStream = provideInput("9");
 
-        Menu menu = new Menu();
         String result = menu.showMainMenu(library, inputStream);
 
         assertEquals("Good Bye", result);
 
     }
+
+
+
 }

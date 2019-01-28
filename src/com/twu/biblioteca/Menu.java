@@ -14,8 +14,8 @@ public class Menu {
 
         switch (userInput){
             case 1:
-                return library.showBookList();
-            case 2:
+                return library.showAllBooks();
+            case 9:
                 return "Good Bye";
             default:
                 return "Please select a valid option.";
