@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="345">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="315">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,7 +195,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548669517135" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548670430574" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -226,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in biblioteca">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -262,7 +263,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuTest.readUserInput_should_read_the_user_input" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuTest.showMainMenu_should_print_a_notification_when_the_input_is_invalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -272,7 +273,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
-      <option name="METHOD_NAME" value="readUserInput_should_read_the_user_input" />
+      <option name="METHOD_NAME" value="showMainMenu_should_print_a_notification_when_the_input_is_invalid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,11 +297,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in biblioteca" />
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.MenuTest.showMainMenu_should_print_a_notification_when_the_input_is_invalid" />
+        <item itemvalue="JUnit.All in biblioteca" />
         <item itemvalue="JUnit.MenuTest" />
         <item itemvalue="JUnit.MenuTest.showMainMenu_should_take_user_input_to_display_the_booklist" />
-        <item itemvalue="JUnit.MenuTest.readUserInput_should_read_the_user_input" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +315,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548253092784</updated>
-      <workItem from="1548253094245" duration="26030000" />
+      <workItem from="1548253094245" duration="26980000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1548254246537</created>
@@ -372,22 +373,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548664184574</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ssc / 1.4 / refactorings">
+      <created>1548669537898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548669537898</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTest_showMainMenu_should_take_user_input_to_display_the_booklist - 2019.01.28 at 09h 42m 00s.xml">
-      <configuration name="MenuTest.showMainMenu_should_take_user_input_to_display_the_booklist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MenuTest_showMainMenu_should_take_user_input_to_display_the_booklist - 2019.01.28 at 09h 42m 35s.xml">
-      <configuration name="MenuTest.showMainMenu_should_take_user_input_to_display_the_booklist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MenuTest_showMainMenu_should_take_user_input_to_display_the_booklist - 2019.01.28 at 09h 42m 38s.xml">
-      <configuration name="MenuTest.showMainMenu_should_take_user_input_to_display_the_booklist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MenuTest_showMainMenu_should_take_user_input_to_display_the_booklist - 2019.01.28 at 09h 42m 43s.xml">
-      <configuration name="MenuTest.showMainMenu_should_take_user_input_to_display_the_booklist" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MenuTest - 2019.01.28 at 09h 44m 40s.xml">
       <configuration name="MenuTest" configurationId="JUnit" />
     </history-entry>
@@ -406,9 +402,21 @@
     <history-entry file="MenuTest - 2019.01.28 at 10h 35m 26s.xml">
       <configuration name="MenuTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_biblioteca - 2019.01.28 at 10h 58m 39s.xml">
+      <configuration name="All in biblioteca" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MenuTest_showMainMenu_should_print_a_notification_when_the_input_is_invalid - 2019.01.28 at 11h 05m 48s.xml">
+      <configuration name="MenuTest.showMainMenu_should_print_a_notification_when_the_input_is_invalid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MenuTest_showMainMenu_should_print_a_notification_when_the_input_is_invalid - 2019.01.28 at 11h 06m 42s.xml">
+      <configuration name="MenuTest.showMainMenu_should_print_a_notification_when_the_input_is_invalid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MenuTest_showMainMenu_should_print_a_notification_when_the_input_is_invalid - 2019.01.28 at 11h 08m 34s.xml">
+      <configuration name="MenuTest.showMainMenu_should_print_a_notification_when_the_input_is_invalid" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26030000" />
+    <option name="totallyTimeSpent" value="26980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -483,7 +491,8 @@
     <MESSAGE value="ssc / 1.2 / print booklist" />
     <MESSAGE value="ssc / 1.2 / add author and year, fixed tests" />
     <MESSAGE value="ssc / 1.4 / added menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssc / 1.4 / added menu" />
+    <MESSAGE value="ssc / 1.4 / refactorings" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssc / 1.4 / refactorings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -493,6 +502,12 @@
           <line>29</line>
           <properties />
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -588,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Welcome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -629,20 +634,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -18,11 +18,8 @@ public class Menu {
             case 2:
                 return "";
             default:
-                System.out.println("Please select a valid option.");
-                showMainMenu(library, inputStream);
+                return "Please select a valid option.";
         }
-
-        return "";
 
     }
 
