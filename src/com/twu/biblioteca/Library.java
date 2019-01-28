@@ -12,20 +12,37 @@ public class Library {
         this.bookList = bookList;
     }
 
-    public String showBookList() throws EmptyBookListException {
+    public String showAllBooks() throws EmptyBookListException {
 
-        if (bookList == null || bookList.isEmpty()) {
+        if (isBookListEmpty()) {
             throw new EmptyBookListException();
         }
 
         StringBuilder books = new StringBuilder();
         for (Book book : bookList) {
-            if (book.getAvailability() == Book.Availability.AVAILABLE)
-            {
+            books.append(book);
+        }
+
+        return books.toString();
+    }
+
+    public String showAvailableBooks() throws EmptyBookListException {
+        if(isBookListEmpty()) {
+            throw new EmptyBookListException();
+        }
+
+        StringBuilder books = new StringBuilder();
+        for (Book book : bookList) {
+            if (book.getAvailability() == Book.Availability.AVAILABLE) {
                 books.append(book);
             }
         }
 
         return books.toString();
+    }
+
+
+    private boolean isBookListEmpty() {
+        return bookList == null || bookList.isEmpty();
     }
 }
