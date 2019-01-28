@@ -28,7 +28,6 @@ public class Menu {
 
     private int readUserInput(InputStream inputStream) {
         Scanner scanner = new Scanner(inputStream);
-        String userInput = scanner.next();
-        return Integer.parseInt(userInput);
+        return scanner.nextInt();
     }
 }

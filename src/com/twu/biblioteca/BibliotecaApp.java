@@ -16,7 +16,9 @@ public class BibliotecaApp {
 
         Welcome welcome = new Welcome(System.out);
         welcome.showWelcomeMessage();
-        System.out.println(library.showBookList());
+
+        Menu menu = new Menu();
+        System.out.print(menu.showMainMenu(library, System.in));
 
     }
 }
