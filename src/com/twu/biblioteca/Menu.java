@@ -1,0 +1,34 @@
+package com.twu.biblioteca;
+
+import com.twu.biblioteca.exception.EmptyBookListException;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class Menu {
+
+
+    public String showMainMenu(Library library, InputStream inputStream) throws EmptyBookListException {
+        System.out.println("What do you wanna do next? \n[1] List of books");
+        int userInput = readUserInput(inputStream);
+
+        switch (userInput){
+            case 1:
+                return library.showBookList();
+            case 2:
+                return "";
+            default:
+                System.out.println("Please select a valid option.");
+                showMainMenu(library, inputStream);
+        }
+
+        return "";
+
+    }
+
+    private int readUserInput(InputStream inputStream) {
+        Scanner scanner = new Scanner(inputStream);
+        String userInput = scanner.next();
+        return Integer.parseInt(userInput);
+    }
+}
