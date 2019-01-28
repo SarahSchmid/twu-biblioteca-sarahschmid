@@ -7,10 +7,10 @@ public class BibliotecaApp {
     public static void main(String[] args) throws Exception {
 
         Book[] bookList = {
-                new Book("Lord ot the Rings: Fellowship of the Ring", "J.R.R. Tolkien", 1954),
-                new Book("Lord ot the Rings: The Two Towers", "J.R.R. Tolkien", 1954),
-                new Book("Lord ot the Rings: The Return of the King", "J.R.R. Tolkien", 1954),
-                new Book("Bible", "God", 0)
+                new Book("Lord ot the Rings: Fellowship of the Ring", "J.R.R. Tolkien", 1954, Book.Availability.AVAILABLE),
+                new Book("Lord ot the Rings: The Two Towers", "J.R.R. Tolkien", 1954, Book.Availability.AVAILABLE),
+                new Book("Lord ot the Rings: The Return of the King", "J.R.R. Tolkien", 1954, Book.Availability.AVAILABLE),
+                new Book("Bible", "God", 0, Book.Availability.AVAILABLE)
         };
         Library library = new Library(Arrays.asList(bookList));
 

@@ -20,7 +20,10 @@ public class Library {
 
         StringBuilder books = new StringBuilder();
         for (Book book : bookList) {
-            books.append(book);
+            if (book.getAvailability() == Book.Availability.AVAILABLE)
+            {
+                books.append(book);
+            }
         }
 
         return books.toString();

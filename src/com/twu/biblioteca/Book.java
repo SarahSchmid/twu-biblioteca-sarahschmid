@@ -6,10 +6,21 @@ public class Book {
     private String author;
     private int year;
 
-    public Book(String title, String author, int year) {
+    public enum Availability {
+        AVAILABLE,
+        RESERVED
+    }
+    private Availability availability;
+
+    public Book(String title, String author, int year, Availability availability) {
         this.title = title;
         this.author = author;
         this.year = year;
+        this.availability = availability;
+    }
+
+    public Availability getAvailability() {
+        return availability;
     }
 
     @Override
