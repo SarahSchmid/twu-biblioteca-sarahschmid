@@ -1,7 +1,7 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
-import com.twu.biblioteca.exception.CheckOutException;
+import com.twu.biblioteca.exception.BookValidationException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
 import java.io.InputStream;
@@ -14,7 +14,7 @@ public class Menu {
 
 
     public String showMainMenu(Library library, InputStream inputStream) throws
-            EmptyBookListException, CheckOutException, BookIsAlreadyAvailableException {
+            EmptyBookListException, BookValidationException, BookIsAlreadyAvailableException {
         System.out.println("What do you wanna do next? " +
                 "\n[1] List of books " +
                 "\n[2] Checkout book" +
@@ -56,7 +56,7 @@ public class Menu {
     }
 
     public void proceedCheckIn(Library library, InputStream inputStream) throws
-            EmptyBookListException, CheckOutException, BookIsAlreadyAvailableException {
+            EmptyBookListException, BookValidationException, BookIsAlreadyAvailableException {
         System.out.println("Which book would you like to return:");
         System.out.print(library.showBooks(Availability.RESERVED));
 
@@ -68,11 +68,11 @@ public class Menu {
     }
 
 
-    public Book bookPicker(List<Book> bookList, int index) throws CheckOutException {
+    public Book bookPicker(List<Book> bookList, int index) throws BookValidationException {
         index = index - 1;
 
         if (index > bookList.size() || index < 0) {
-            throw new CheckOutException();
+            throw new BookValidationException();
         }
 
         return bookList.get(index);
