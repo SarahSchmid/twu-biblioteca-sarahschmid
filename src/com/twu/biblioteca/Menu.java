@@ -27,8 +27,10 @@ public class Menu {
                 return library.showBooks(Availability.AVAILABLE);
             case 2:
                 proceedCheckout(library, inputStream);
+                return "Thank you! Enjoy the book";
             case 3:
                 proceedCheckIn(library, inputStream);
+                return "Thank you for returning the book";
             case 9:
                 return "Good Bye";
             default:
@@ -44,15 +46,10 @@ public class Menu {
             System.out.print(library.showBooks(Availability.AVAILABLE));
 
             List<Book> bookList = library.getFilteredBookList(Availability.AVAILABLE);
-
             int userInput = readUserInput(inputStream);
-
             Book book = bookPicker(bookList, userInput);
 
             library.checkoutBook(book);
-
-            System.out.println("Thank you! Enjoy the book");
-
         } catch (Exception e) {
             System.out.println("Error during checkout:\n" + e.getMessage());
         }
@@ -64,13 +61,10 @@ public class Menu {
         System.out.print(library.showBooks(Availability.RESERVED));
 
         List<Book> bookList = library.getFilteredBookList(Availability.RESERVED);
-
         int userInput = readUserInput(inputStream);
-
         Book book = bookPicker(bookList, userInput);
 
         library.checkInBook(book);
-
     }
 
 
