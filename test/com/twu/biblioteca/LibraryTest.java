@@ -130,4 +130,27 @@ public class LibraryTest {
 
         assertSame(book.getAvailability(), Book.Availability.AVAILABLE);
     }
+
+    @Test
+    public void getFilteredBooklist_should_return_a_booklist_with_all_available_books() {
+        Book book = new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE);
+
+        List<Book> bookList = new ArrayList<>();
+        bookList.add(book);
+        bookList.add(new Book("Harry Potter", "J.K. Rowling", 1997, Book.Availability.AVAILABLE));
+        bookList.add(new Book("Lord of the Ring", "J.R.R. Tolkien", 1954, Book.Availability.RESERVED));
+
+        List<Book> expected = new ArrayList<>();
+        expected.add(book);
+        expected.add(new Book("Harry Potter", "J.K. Rowling", 1997, Book.Availability.AVAILABLE));
+
+        Library library = new Library(bookList);
+
+        List<Book> result = library.getFilteredBookList(Book.Availability.AVAILABLE);
+
+        assertEquals(expected.get(0).getAvailability(), result.get(0).getAvailability());
+        assertEquals(expected.get(0).toString(), result.get(0).toString());
+        assertEquals(expected.get(1).getAvailability(), result.get(1).getAvailability());
+        assertEquals(expected.get(1).toString(), result.get(1).toString());
+    }
 }

@@ -4,6 +4,7 @@ import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.twu.biblioteca.Book.Availability;
@@ -55,7 +56,15 @@ public class Library {
         return bookList == null || bookList.isEmpty();
     }
 
-    public List<Book> getBookList() {
-        return bookList;
+    public List<Book> getFilteredBookList(Availability availability) {
+
+        List<Book> filteredBooks = new ArrayList<>();
+        for (Book book : bookList) {
+            if (book.getAvailability() == availability) {
+                filteredBooks.add(book);
+            }
+        }
+
+        return filteredBooks;
     }
 }
