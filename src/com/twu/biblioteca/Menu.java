@@ -1,6 +1,5 @@
 package com.twu.biblioteca;
 
-import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.BookValidationException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
@@ -13,8 +12,7 @@ import static com.twu.biblioteca.Book.Availability;
 public class Menu {
 
 
-    public String showMainMenu(Library library, InputStream inputStream) throws
-            EmptyBookListException, BookValidationException, BookIsAlreadyAvailableException {
+    public String showMainMenu(Library library, InputStream inputStream) throws EmptyBookListException {
         System.out.println("What do you wanna do next? " +
                 "\n[1] List of books " +
                 "\n[2] Checkout book" +
@@ -36,9 +34,7 @@ public class Menu {
             default:
                 return "Please select a valid option.";
         }
-
     }
-
 
     public void proceedCheckout(Library library, InputStream inputStream) {
         try {
@@ -55,16 +51,20 @@ public class Menu {
         }
     }
 
-    public void proceedCheckIn(Library library, InputStream inputStream) throws
-            EmptyBookListException, BookValidationException, BookIsAlreadyAvailableException {
-        System.out.println("Which book would you like to return:");
-        System.out.print(library.showBooks(Availability.RESERVED));
+    public void proceedCheckIn(Library library, InputStream inputStream) {
+        try {
+            System.out.println("Which book would you like to return:");
+            System.out.print(library.showBooks(Availability.RESERVED));
 
-        List<Book> bookList = library.getFilteredBookList(Availability.RESERVED);
-        int userInput = readUserInput(inputStream);
-        Book book = bookPicker(bookList, userInput);
+            List<Book> bookList = library.getFilteredBookList(Availability.RESERVED);
+            int userInput = readUserInput(inputStream);
+            Book book = bookPicker(bookList, userInput);
 
-        library.checkInBook(book);
+            library.checkInBook(book);
+
+        } catch (Exception e) {
+            System.out.println("Error during checkin:\n" + e.getMessage());
+        }
     }
 
 
