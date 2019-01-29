@@ -26,7 +26,7 @@ public class MenuTest {
 
         InputStream inputStream = provideInput("1");
 
-        when(library.showBooks()).thenReturn("this is a book list");
+        when(library.showBooks(Book.Availability.AVAILABLE)).thenReturn("this is a book list");
 
         String result = menu.showMainMenu(library, inputStream);
 

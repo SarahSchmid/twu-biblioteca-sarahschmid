@@ -16,14 +16,14 @@ public class Library {
     }
 
 
-    public String showBooks() throws EmptyBookListException {
+    public String showBooks(Availability availability) throws EmptyBookListException {
         if(isBookListEmpty()) {
             throw new EmptyBookListException();
         }
 
         StringBuilder books = new StringBuilder();
         for (Book book : bookList) {
-            if (book.getAvailability() == Availability.AVAILABLE) {
+            if (book.getAvailability() == availability) {
                 books.append(book);
             }
         }

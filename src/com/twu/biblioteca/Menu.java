@@ -16,7 +16,7 @@ public class Menu {
 
         switch (userInput){
             case 1:
-                return library.showBooks();
+                return library.showBooks(Book.Availability.AVAILABLE);
             case 9:
                 return "Good Bye";
             default:
