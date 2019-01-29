@@ -31,11 +31,6 @@ public class Library {
         return books.toString();
     }
 
-
-    private boolean isBookListEmpty() {
-        return bookList == null || bookList.isEmpty();
-    }
-
     public void checkoutBook(Book book) throws CheckOutException {
         Availability availability = book.getAvailability();
         if (availability == Availability.RESERVED){
@@ -44,5 +39,13 @@ public class Library {
 
         book.setAvailability(Availability.RESERVED);
 
+    }
+
+    private boolean isBookListEmpty() {
+        return bookList == null || bookList.isEmpty();
+    }
+
+    public List<Book> getBookList() {
+        return bookList;
     }
 }

@@ -1,11 +1,15 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -46,7 +50,6 @@ public class MenuTest {
         Menu menu = new Menu();
         Library library = mock(Library.class);
 
-        String input = "9";
         InputStream inputStream = provideInput("9");
 
         String result = menu.showMainMenu(library, inputStream);
@@ -55,6 +58,26 @@ public class MenuTest {
 
     }
 
+    @Test(expected = BookIsNotAvailableException.class)
+    public void bookPicker_should_throw_a_BookIsNotAvailableException_when_the_book_is_not_available() throws Exception {
+        Menu menu = new Menu();
 
+        List<Book> bookList = new ArrayList<>();
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE));
 
+        menu.bookPicker(bookList, 5);
+    }
+
+    @Test
+    public void bookPicker_should_return_the_correct_book_from_the_booklist() throws Exception {
+        Menu menu = new Menu();
+        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Book.Availability.AVAILABLE);
+
+        List<Book> bookList = new ArrayList<>();
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE));
+        bookList.add(expected);
+        Book result = menu.bookPicker(bookList, 2);
+
+        assertSame(result, expected);
+    }
 }
