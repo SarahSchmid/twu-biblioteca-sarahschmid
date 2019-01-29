@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db4edb5e-9342-4b77-bfd6-77721437a22f" name="Default Changelist" comment="ssc / 1.8 / added c">
+    <list default="true" id="db4edb5e-9342-4b77-bfd6-77721437a22f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsAlreadyAvailableException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="-290">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,6 +48,39 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsAlreadyAvailableException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -74,13 +109,14 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/EmptyBookListException.java" />
         <option value="$PROJECT_DIR$/test/resources/mockito-extensions/org.mockito.plugins.MockMaker" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsNotAvailableException.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/CheckOutException.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsAlreadyAvailableException.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" />
       </list>
     </option>
   </component>
@@ -142,7 +178,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548764881596" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548767660229" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -176,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MenuTest.showMainMenu_should_proceed_to_checkout_if_the_user_wants_to_reserve_a_book">
+  <component name="RunManager" selected="JUnit.LibraryTest.checkInBook_should_set_the_availability_of_the_chosen_book_to_available">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -198,7 +234,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.showBooks_should_only_return_the_books_that_are_already_reserved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.checkInBook_should_set_the_availability_of_the_chosen_book_to_available" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -208,13 +244,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibraryTest" />
-      <option name="METHOD_NAME" value="showBooks_should_only_return_the_books_that_are_already_reserved" />
+      <option name="METHOD_NAME" value="checkInBook_should_set_the_availability_of_the_chosen_book_to_available" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuTest.proceedCheckout_should_checkout_the_chosen_book" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -223,8 +259,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
-      <option name="METHOD_NAME" value="proceedCheckout_should_checkout_the_chosen_book" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibraryTest" />
+      <option name="METHOD_NAME" value="checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.checkInBook_should_set_the_availability_of_the_chosen_book_to_available" />
+        <item itemvalue="JUnit.LibraryTest.checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned" />
         <item itemvalue="JUnit.MenuTest.showMainMenu_should_proceed_to_checkout_if_the_user_wants_to_reserve_a_book" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.All in biblioteca" />
-        <item itemvalue="JUnit.MenuTest.proceedCheckout_should_checkout_the_chosen_book" />
-        <item itemvalue="JUnit.LibraryTest.showBooks_should_only_return_the_books_that_are_already_reserved" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +304,7 @@
       <updated>1548253092784</updated>
       <workItem from="1548253094245" duration="34073000" />
       <workItem from="1548687731293" duration="215000" />
-      <workItem from="1548688677507" duration="10897000" />
+      <workItem from="1548688677507" duration="12195000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1548254246537</created>
@@ -445,16 +481,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548764808143</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ssc / 1.8 / added checkout option to the menu">
+      <created>1548764918929</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1548764918929</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTest_proceedCheckout_should_checkout_the_chosen_book - 2019.01.29 at 12h 33m 27s.xml">
-      <configuration name="MenuTest.proceedCheckout_should_checkout_the_chosen_book" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MenuTest_proceedCheckout_should_checkout_the_chosen_book - 2019.01.29 at 12h 33m 30s.xml">
-      <configuration name="MenuTest.proceedCheckout_should_checkout_the_chosen_book" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MenuTest_proceedCheckout_should_checkout_the_chosen_book - 2019.01.29 at 12h 57m 59s.xml">
       <configuration name="MenuTest.proceedCheckout_should_checkout_the_chosen_book" configurationId="JUnit" />
     </history-entry>
@@ -479,12 +516,19 @@
     <history-entry file="MenuTest_showMainMenu_should_proceed_to_checkout_if_the_user_wants_to_reserve_a_book - 2019.01.29 at 13h 25m 05s.xml">
       <configuration name="MenuTest.showMainMenu_should_proceed_to_checkout_if_the_user_wants_to_reserve_a_book" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibraryTest_checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned - 2019.01.29 at 14h 10m 53s.xml">
+      <configuration name="LibraryTest.checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned - 2019.01.29 at 14h 12m 23s.xml">
+      <configuration name="LibraryTest.checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45185000" />
+    <option name="totallyTimeSpent" value="46483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -495,13 +539,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.498779" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.498779" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501221" side_tool="true" weight="0.32959184" />
@@ -594,7 +638,8 @@
     <MESSAGE value="ssc / 1.8 / success message on checkout" />
     <MESSAGE value="ssc / 1.9 / refactored error messages and handling" />
     <MESSAGE value="ssc / 1.9 / prepared the booklist" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssc / 1.9 / prepared the booklist" />
+    <MESSAGE value="ssc / 1.8 / added checkout option to the menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssc / 1.8 / added checkout option to the menu" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -700,52 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsNotAvailableException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
-          <folding>
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/CheckOutException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -765,8 +764,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="-290">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/CheckOutException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsNotAvailableException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookIsAlreadyAvailableException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

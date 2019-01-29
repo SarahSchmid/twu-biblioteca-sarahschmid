@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
@@ -39,6 +40,15 @@ public class Library {
 
         book.setAvailability(Availability.RESERVED);
 
+    }
+
+    public void checkInBook(Book book) throws BookIsAlreadyAvailableException {
+        Availability availability = book.getAvailability();
+        if (availability == Availability.AVAILABLE) {
+            throw new BookIsAlreadyAvailableException();
+        }
+
+        book.setAvailability(Availability.AVAILABLE);
     }
 
     private boolean isBookListEmpty() {

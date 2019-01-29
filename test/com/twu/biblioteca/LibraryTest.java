@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 import org.junit.Test;
@@ -104,5 +105,29 @@ public class LibraryTest {
         Library library = new Library(bookList);
 
         library.checkoutBook(book);
+    }
+
+    @Test (expected = BookIsAlreadyAvailableException.class)
+    public void checkInBook_should_throw_BookIsAlreadyAvailableException_if_the_book_cannot_be_returned() throws BookIsAlreadyAvailableException {
+        Book book = new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE);
+
+        List<Book> bookList = new ArrayList<>();
+        bookList.add(book);
+        Library library = new Library(bookList);
+
+        library.checkInBook(book);
+    }
+
+    @Test
+    public void checkInBook_should_set_the_availability_of_the_chosen_book_to_available() throws BookIsAlreadyAvailableException {
+        Book book = new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.RESERVED);
+
+        List<Book> bookList = new ArrayList<>();
+        bookList.add(book);
+
+        Library library = new Library(bookList);
+        library.checkInBook(book);
+
+        assertSame(book.getAvailability(), Book.Availability.AVAILABLE);
     }
 }
