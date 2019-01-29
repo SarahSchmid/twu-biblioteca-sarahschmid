@@ -42,6 +42,8 @@ public class Menu {
 
             library.checkoutBook(book);
 
+            System.out.println("Thank you! Enjoy the book");
+
         } catch (Exception e) {
             System.out.println("Error during checkout:\n" + e.getMessage());
         }
