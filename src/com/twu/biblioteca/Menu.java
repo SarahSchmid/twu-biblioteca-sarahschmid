@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.CheckOutException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
@@ -34,7 +35,6 @@ public class Menu {
 
 
     public void proceedCheckout(Library library, InputStream inputStream) {
-
         try {
             System.out.println("Please pick a book:");
             System.out.print(library.showBooks(Availability.AVAILABLE));
@@ -52,6 +52,21 @@ public class Menu {
         } catch (Exception e) {
             System.out.println("Error during checkout:\n" + e.getMessage());
         }
+    }
+
+    public void proceedCheckIn(Library library, InputStream inputStream) throws
+            EmptyBookListException, CheckOutException, BookIsAlreadyAvailableException {
+        System.out.println("Which book would you like to return:");
+        System.out.print(library.showBooks(Availability.RESERVED));
+
+        List<Book> bookList = library.getBookList();
+
+        int userInput = readUserInput(inputStream);
+
+        Book book = bookPicker(bookList, userInput);
+
+        library.checkInBook(book);
+
     }
 
 
