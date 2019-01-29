@@ -1,6 +1,6 @@
 package com.twu.biblioteca;
 
-import com.twu.biblioteca.exception.BookIsNotAvailableException;
+import com.twu.biblioteca.exception.CheckOutException;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -58,8 +58,8 @@ public class MenuTest {
 
     }
 
-    @Test(expected = BookIsNotAvailableException.class)
-    public void bookPicker_should_throw_a_BookIsNotAvailableException_when_the_book_is_not_available() throws Exception {
+    @Test(expected = CheckOutException.class)
+    public void bookPicker_should_throw_a_CheckOutException_when_the_book_is_not_available() throws Exception {
         Menu menu = new Menu();
 
         List<Book> bookList = new ArrayList<>();

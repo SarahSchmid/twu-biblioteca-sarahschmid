@@ -1,6 +1,6 @@
 package com.twu.biblioteca;
 
-import com.twu.biblioteca.exception.CheckOutException;
+import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 import org.junit.Test;
 
@@ -95,8 +95,8 @@ public class LibraryTest {
         assertSame(book.getAvailability(), Book.Availability.RESERVED);
     }
 
-    @Test (expected = CheckOutException.class)
-    public void checkoutBook_should_throw_CheckOutException_if_its_already_reserved() throws Exception {
+    @Test (expected = BookIsNotAvailableException.class)
+    public void checkoutBook_should_throw_BookIsNotAvailableException_if_its_already_reserved() throws Exception {
         Book book = new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.RESERVED);
 
         List<Book> bookList = new ArrayList<>();

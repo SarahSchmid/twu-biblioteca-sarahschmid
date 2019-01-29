@@ -1,6 +1,6 @@
 package com.twu.biblioteca;
 
-import com.twu.biblioteca.exception.BookIsNotAvailableException;
+import com.twu.biblioteca.exception.CheckOutException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
 import java.io.InputStream;
@@ -50,11 +50,11 @@ public class Menu {
     }
 
 
-    public Book bookPicker(List<Book> bookList, int index) throws BookIsNotAvailableException {
+    public Book bookPicker(List<Book> bookList, int index) throws CheckOutException {
         index = index - 1;
 
         if (index > bookList.size() || index < 0) {
-            throw new BookIsNotAvailableException();
+            throw new CheckOutException();
         }
 
         return bookList.get(index);

@@ -1,6 +1,6 @@
 package com.twu.biblioteca;
 
-import com.twu.biblioteca.exception.CheckOutException;
+import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public class Library {
 
 
     public String showBooks(Availability availability) throws EmptyBookListException {
-        if(isBookListEmpty()) {
+        if (isBookListEmpty()) {
             throw new EmptyBookListException();
         }
 
@@ -31,10 +31,10 @@ public class Library {
         return books.toString();
     }
 
-    public void checkoutBook(Book book) throws CheckOutException {
+    public void checkoutBook(Book book) throws BookIsNotAvailableException {
         Availability availability = book.getAvailability();
-        if (availability == Availability.RESERVED){
-            throw new CheckOutException();
+        if (availability == Availability.RESERVED) {
+            throw new BookIsNotAvailableException();
         }
 
         book.setAvailability(Availability.RESERVED);
