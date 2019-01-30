@@ -5,17 +5,38 @@ import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
 public class Library {
 
     private List<Book> bookList;
+    private List<Movie> movieList;
+
 
     public Library(List<Book> bookList) {
         this.bookList = bookList;
     }
 
+    public Library() {
+        Book[] bookList = {
+                new Book("Lord ot the Rings: Fellowship of the Ring", "J.R.R. Tolkien", 1954, Availability.AVAILABLE),
+                new Book("Lord ot the Rings: The Two Towers", "J.R.R. Tolkien", 1954, Availability.AVAILABLE),
+                new Book("Lord ot the Rings: The Return of the King", "J.R.R. Tolkien", 1954, Availability.RESERVED),
+                new Book("Bible", "God", 0)
+        };
+        this.bookList = Arrays.asList(bookList);
+
+        Movie[] movieList = {
+                new Movie("Gran Torino", "Clint Eastwood", 2008),
+                new Movie("Django Unchained", "Quentin Tarantino", 2013),
+                new Movie("Kill Bill: Volume 1", "Quentin Tarantino", 2003),
+                new Movie("Kill Bill: Volume 2", "Quentin Tarantino", 2004),
+                new Movie("Pulp Fiction", "Quentin Tarantino", 1994)
+        };
+        this.movieList = Arrays.asList(movieList);
+    }
 
     public String showBooks(Availability availability) throws EmptyBookListException {
         if (isBookListEmpty()) {
@@ -23,10 +44,8 @@ public class Library {
         }
 
         StringBuilder books = new StringBuilder();
-        for (Book book : bookList) {
-            if (book.getAvailability() == availability) {
+        for (Book book : getFilteredBookList(availability)) {
                 books.append(book);
-            }
         }
 
         return books.toString();
@@ -56,14 +75,13 @@ public class Library {
     }
 
     public List<Book> getFilteredBookList(Availability availability) {
-
         List<Book> filteredBooks = new ArrayList<>();
         for (Book book : bookList) {
             if (book.getAvailability() == availability) {
                 filteredBooks.add(book);
             }
         }
-
         return filteredBooks;
     }
+
 }

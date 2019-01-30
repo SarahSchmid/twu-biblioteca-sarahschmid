@@ -14,6 +14,7 @@ public class Movie {
         this.name = name;
         this.director = director;
         this.year = year;
+        this.rating = 0;
     }
 
     public void setRating(int rating) throws RatingIsNotValidException {
