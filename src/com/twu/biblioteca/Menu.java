@@ -13,9 +13,10 @@ public class Menu {
 
     public String showMainMenu(Library library, InputStream inputStream) throws EmptyBookListException {
         System.out.println("What do you wanna do next? " +
-                "\n[1] List of books " +
+                "\n[1] List of available books " +
                 "\n[2] Checkout book" +
                 "\n[3] Return book" +
+                "\n[4] List of available movies" +
                 "\n[9] Quit");
         int userInput = readUserInput(inputStream);
 
@@ -28,6 +29,8 @@ public class Menu {
             case 3:
                 proceedCheckIn(library, inputStream);
                 return "Thank you for returning the book";
+            case 4:
+                return library.showMovies(Availability.AVAILABLE);
             case 9:
                 return "Good Bye";
             default:
