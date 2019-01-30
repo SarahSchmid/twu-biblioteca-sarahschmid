@@ -3,6 +3,7 @@ package com.twu.biblioteca;
 import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
+import com.twu.biblioteca.exception.MovieIsNotAvailableException;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -184,5 +185,23 @@ public class LibraryTest {
         String result = library.showMovies(Availability.AVAILABLE);
 
         assertEquals(expected, result);
+    }
+
+    @Test (expected = MovieIsNotAvailableException.class)
+    public void checkOutMovie_should_throw_a_MovieIsNotAvailableException_when_the_movie_is_already_reserved() throws Exception {
+        Library library = new Library();
+        Movie movie = new Movie("Gran Torino", "Clint Eastwood", 2008, Availability.RESERVED);
+
+        library.checkOutMovie(movie);
+    }
+
+    @Test
+    public void checkOutMovie_should_set_the_availability_of_the_given_movie_to_reserved() throws Exception {
+        Library library = new Library();
+        Movie movie = new Movie("Gran Torino", "Clint Eastwood", 2008, Availability.AVAILABLE);
+
+        library.checkOutMovie(movie);
+
+        assertEquals(Availability.RESERVED, movie.getAvailability());
     }
 }

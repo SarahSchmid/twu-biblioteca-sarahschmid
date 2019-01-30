@@ -3,6 +3,7 @@ package com.twu.biblioteca;
 import com.twu.biblioteca.exception.BookIsAlreadyAvailableException;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.EmptyBookListException;
+import com.twu.biblioteca.exception.MovieIsNotAvailableException;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,7 +66,6 @@ public class Library {
         if (availability == Availability.AVAILABLE) {
             throw new BookIsAlreadyAvailableException();
         }
-
         book.setAvailability(Availability.AVAILABLE);
     }
 
@@ -103,5 +103,10 @@ public class Library {
         return filteredMovies;
     }
 
-
+    public void checkOutMovie (Movie movie) throws MovieIsNotAvailableException {
+        if (movie.getAvailability() == Availability.RESERVED) {
+            throw new MovieIsNotAvailableException();
+        }
+        movie.setAvailability(Availability.RESERVED);
+    }
 }

@@ -38,6 +38,10 @@ public class Movie {
         return availability;
     }
 
+    public void setAvailability(Availability availability) {
+        this.availability = availability;
+    }
+
     public int getRating() {
         return rating;
     }
