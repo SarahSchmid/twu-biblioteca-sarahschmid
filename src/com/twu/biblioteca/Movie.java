@@ -17,14 +17,18 @@ public class Movie {
     }
 
     public void setRating(int rating) throws RatingIsNotValidException {
-        if (rating == 0){
+        if (rating == 0) {
             this.rated = false;
-        }
-        else if (rating < 1 || rating > 10){
+        } else if (rating < 1 || rating > 10) {
             throw new RatingIsNotValidException();
+        }else {
+            this.rating = rating;
+            this.rated = true;
         }
+    }
 
-        this.rating = rating;
+    public int getRating() {
+        return rating;
     }
 
     public boolean isRated() {

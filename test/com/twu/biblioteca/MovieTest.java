@@ -21,4 +21,13 @@ public class MovieTest {
         assertSame(false, movie.isRated());
 
     }
+
+    @Test
+    public void setRating_should_set_the_rating_value_and_mark_it_as_rated() throws Exception {
+        Movie movie = new Movie("Frozen", "Disney", 2016);
+        movie.setRating(7);
+
+        assertSame(true, movie.isRated());
+        assertSame(7, movie.getRating());
+    }
 }
