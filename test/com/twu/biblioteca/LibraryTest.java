@@ -154,25 +154,25 @@ public class LibraryTest {
         assertEquals(expected.get(1).toString(), result.get(1).toString());
     }
 
-//    @Test
-//    public void getFilteredMovieList_should_return_a_list_with_all_available_movies() {
-//        Library library = new Library();
-//        List<Movie> expected = new ArrayList<>();
-//        expected.add(new Movie("Gran Torino", "Clint Eastwood", 2008, Availability.AVAILABLE));
-//        expected.add(new Movie("Django Unchained", "Quentin Tarantino", 2013, Availability.AVAILABLE));
-//        expected.add(new Movie("Pulp Fiction", "Quentin Tarantino", 1994, Availability.AVAILABLE));
-//
-//        List<Movie> result = library.getFilteredMovieList(Availability.AVAILABLE);
-//
-//        assertEquals(expected.get(0).getTitle(), result.get(0).getTitle());
-//        assertEquals(expected.get(0).getAvailability(), result.get(0).getAvailability());
-//
-//        assertEquals(expected.get(1).getTitle(), result.get(1).getTitle());
-//        assertEquals(expected.get(1).getAvailability(), result.get(1).getAvailability());
-//
-//        assertEquals(expected.get(2).getTitle(), result.get(2).getTitle());
-//        assertEquals(expected.get(2).getAvailability(), result.get(2).getAvailability());
-//    }
+    @Test
+    public void getFilteredMovieList_should_return_a_list_with_all_available_movies() {
+        Library library = new Library();
+        List<Movie> expected = new ArrayList<>();
+        expected.add(new Movie("Gran Torino", "Clint Eastwood", 2008, Availability.AVAILABLE));
+        expected.add(new Movie("Django Unchained", "Quentin Tarantino", 2013, Availability.AVAILABLE));
+        expected.add(new Movie("Pulp Fiction", "Quentin Tarantino", 1994, Availability.AVAILABLE));
+
+        List<Movie> result = library.getFilteredMovieList(Availability.AVAILABLE);
+
+        assertEquals(expected.get(0).getTitle(), result.get(0).getTitle());
+        assertEquals(expected.get(0).getAvailability(), result.get(0).getAvailability());
+
+        assertEquals(expected.get(1).getTitle(), result.get(1).getTitle());
+        assertEquals(expected.get(1).getAvailability(), result.get(1).getAvailability());
+
+        assertEquals(expected.get(2).getTitle(), result.get(2).getTitle());
+        assertEquals(expected.get(2).getAvailability(), result.get(2).getAvailability());
+    }
 
     @Test
     public void showMovies_should_return_all_movies_that_are_available() {

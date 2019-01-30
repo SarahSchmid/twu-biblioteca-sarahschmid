@@ -2,6 +2,7 @@ package com.twu.biblioteca;
 
 import com.twu.biblioteca.exception.BookValidationException;
 import com.twu.biblioteca.exception.EmptyBookListException;
+import com.twu.biblioteca.exception.MovieValidationException;
 
 import java.io.InputStream;
 import java.util.List;
@@ -17,6 +18,7 @@ public class Menu {
                 "\n[2] Checkout book" +
                 "\n[3] Return book" +
                 "\n[4] List of available movies" +
+                "\n[5] Checkout movie" +
                 "\n[9] Quit");
         int userInput = readUserInput(inputStream);
 
@@ -31,6 +33,9 @@ public class Menu {
                 return "Thank you for returning the book";
             case 4:
                 return library.showMovies(Availability.AVAILABLE);
+            case 5:
+                proceedMovieCheckOut(library, inputStream);
+                return "Thank you! Enjoy the movie";
             case 9:
                 return "Good Bye";
             default:
@@ -45,7 +50,7 @@ public class Menu {
 
             List<Book> bookList = library.getFilteredBookList(Availability.AVAILABLE);
             int userInput = readUserInput(inputStream);
-            Book book = bookPicker(bookList, userInput);
+            Book book = getChosenBookFromList(bookList, userInput);
 
             library.checkoutBook(book);
         } catch (Exception e) {
@@ -60,7 +65,7 @@ public class Menu {
 
             List<Book> bookList = library.getFilteredBookList(Availability.RESERVED);
             int userInput = readUserInput(inputStream);
-            Book book = bookPicker(bookList, userInput);
+            Book book = getChosenBookFromList(bookList, userInput);
 
             library.checkInBook(book);
 
@@ -69,13 +74,35 @@ public class Menu {
         }
     }
 
-    public Book bookPicker(List<Book> bookList, int index) throws BookValidationException {
+    private Book getChosenBookFromList(List<Book> bookList, int index) throws BookValidationException {
         index = index - 1;
         if (index > bookList.size() || index < 0) {
             throw new BookValidationException();
         }
-
         return bookList.get(index);
+    }
+
+    public void proceedMovieCheckOut(Library library, InputStream inputStream) {
+        try {
+            System.out.println("Please pick a movie:");
+            System.out.print(library.showMovies(Availability.AVAILABLE));
+
+            List<Movie> movieList = library.getFilteredMovieList(Availability.AVAILABLE);
+            int userInput = readUserInput(inputStream);
+            Movie movie = getChosenMovieFromList(movieList, userInput);
+
+            library.checkOutMovie(movie);
+        } catch (Exception e) {
+            System.out.println("Error during checkout:\n" + e.getMessage());
+        }
+    }
+
+    private Movie getChosenMovieFromList(List<Movie> movieList, int index) throws MovieValidationException {
+        index = index - 1;
+        if (index > movieList.size() || index < 0) {
+            throw new MovieValidationException();
+        }
+        return movieList.get(index);
     }
 
     private int readUserInput(InputStream inputStream) {

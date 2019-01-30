@@ -91,7 +91,7 @@ public class Library {
         return movies.toString();
     }
 
-    private List<Movie> getFilteredMovieList(Availability availability) {
+    public List<Movie> getFilteredMovieList(Availability availability) {
         List<Movie> filteredMovies = new ArrayList<>();
         for (Movie movie: movieList) {
             if (movie.getAvailability() == availability) {
