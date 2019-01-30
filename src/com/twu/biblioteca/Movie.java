@@ -9,11 +9,13 @@ public class Movie {
     private int year;
     private int rating;
     private boolean rated;
+    private Availability availability;
 
-    public Movie(String name, String director, int year) {
+    public Movie(String name, String director, int year, Availability availability) {
         this.name = name;
         this.director = director;
         this.year = year;
+        this.availability = availability;
         this.rating = 0;
     }
 

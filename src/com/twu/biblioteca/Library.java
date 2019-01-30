@@ -29,11 +29,11 @@ public class Library {
         this.bookList = Arrays.asList(bookList);
 
         Movie[] movieList = {
-                new Movie("Gran Torino", "Clint Eastwood", 2008),
-                new Movie("Django Unchained", "Quentin Tarantino", 2013),
-                new Movie("Kill Bill: Volume 1", "Quentin Tarantino", 2003),
-                new Movie("Kill Bill: Volume 2", "Quentin Tarantino", 2004),
-                new Movie("Pulp Fiction", "Quentin Tarantino", 1994)
+                new Movie("Gran Torino", "Clint Eastwood", 2008, Availability.AVAILABLE),
+                new Movie("Django Unchained", "Quentin Tarantino", 2013, Availability.AVAILABLE),
+                new Movie("Kill Bill: Volume 1", "Quentin Tarantino", 2003, Availability.RESERVED),
+                new Movie("Kill Bill: Volume 2", "Quentin Tarantino", 2004, Availability.RESERVED),
+                new Movie("Pulp Fiction", "Quentin Tarantino", 1994, Availability.AVAILABLE)
         };
         this.movieList = Arrays.asList(movieList);
     }
