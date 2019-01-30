@@ -26,7 +26,7 @@ public class MenuTest {
 
         InputStream inputStream = provideInput("1");
 
-        when(library.showBooks(Book.Availability.AVAILABLE)).thenReturn("this is a book list");
+        when(library.showBooks(Availability.AVAILABLE)).thenReturn("this is a book list");
 
         String result = menu.showMainMenu(library, inputStream);
 
@@ -63,7 +63,7 @@ public class MenuTest {
         Menu menu = new Menu();
 
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE));
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Availability.AVAILABLE));
 
         menu.bookPicker(bookList, 5);
     }
@@ -71,10 +71,10 @@ public class MenuTest {
     @Test
     public void bookPicker_should_return_the_correct_book_from_the_booklist() throws Exception {
         Menu menu = new Menu();
-        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Book.Availability.AVAILABLE);
+        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Availability.AVAILABLE);
 
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE));
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Availability.AVAILABLE));
         bookList.add(expected);
         Book result = menu.bookPicker(bookList, 2);
 
@@ -85,8 +85,8 @@ public class MenuTest {
     public void proceedCheckout_should_checkout_the_chosen_book(){
         Menu menu = new Menu();
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.AVAILABLE));
-        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Book.Availability.AVAILABLE);
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Availability.AVAILABLE));
+        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Availability.AVAILABLE);
         bookList.add(expected);
         Library library = new Library(bookList);
 
@@ -94,7 +94,7 @@ public class MenuTest {
 
         menu.proceedCheckout(library, inputStream);
 
-        assertSame(expected.getAvailability(), Book.Availability.RESERVED);
+        assertSame(expected.getAvailability(), Availability.RESERVED);
 
     }
 
@@ -102,8 +102,8 @@ public class MenuTest {
     public void proceedCheckIn_should_return_the_chosen_book() throws Exception {
         Menu menu = new Menu();
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Book.Availability.RESERVED));
-        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Book.Availability.RESERVED);
+        bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Availability.RESERVED));
+        Book expected = new Book("Harry Potter", "J.K. Rowling", 1997, Availability.RESERVED);
         bookList.add(expected);
         Library library = new Library(bookList);
 
@@ -111,6 +111,6 @@ public class MenuTest {
 
         menu.proceedCheckIn(library, inputStream);
 
-        assertSame(expected.getAvailability(), Book.Availability.AVAILABLE);
+        assertSame(expected.getAvailability(), Availability.AVAILABLE);
     }
 }

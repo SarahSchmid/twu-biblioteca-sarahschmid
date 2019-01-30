@@ -7,7 +7,6 @@ import com.twu.biblioteca.exception.EmptyBookListException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.twu.biblioteca.Book.Availability;
 
 public class Library {
 

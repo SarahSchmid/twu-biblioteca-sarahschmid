@@ -25,7 +25,6 @@ public class Movie {
         }
 
         this.rating = rating;
-        this.rated = true;
     }
 
     public boolean isRated() {

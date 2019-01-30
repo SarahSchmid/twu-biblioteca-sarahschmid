@@ -7,7 +7,6 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Scanner;
 
-import static com.twu.biblioteca.Book.Availability;
 
 public class Menu {
 

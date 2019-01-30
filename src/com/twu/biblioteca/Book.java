@@ -6,10 +6,6 @@ public class Book {
     private String author;
     private int year;
 
-    public enum Availability {
-        AVAILABLE,
-        RESERVED
-    }
     private Availability availability;
 
     public Book(String title, String author, int year) {
