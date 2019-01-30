@@ -69,10 +69,8 @@ public class Menu {
         }
     }
 
-
     public Book bookPicker(List<Book> bookList, int index) throws BookValidationException {
         index = index - 1;
-
         if (index > bookList.size() || index < 0) {
             throw new BookValidationException();
         }

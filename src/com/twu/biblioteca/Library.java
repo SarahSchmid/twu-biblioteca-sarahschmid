@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
+// TODO: Refactor
 public class Library {
 
     private List<Book> bookList;
@@ -50,14 +50,6 @@ public class Library {
         return books.toString();
     }
 
-    public String showMovies(Availability availability) {
-        StringBuilder movies = new StringBuilder();
-        for (Movie movie : getFilteredMovieList(availability)){
-            movies.append(movie);
-        }
-        return movies.toString();
-    }
-
     public void checkoutBook(Book book) throws BookIsNotAvailableException {
         Availability availability = book.getAvailability();
         if (availability == Availability.RESERVED) {
@@ -91,7 +83,17 @@ public class Library {
         return filteredBooks;
     }
 
-    public List<Movie> getFilteredMovieList(Availability availability) {
+
+
+    public String showMovies(Availability availability) {
+        StringBuilder movies = new StringBuilder();
+        for (Movie movie : getFilteredMovieList(availability)){
+            movies.append(movie);
+        }
+        return movies.toString();
+    }
+
+    private List<Movie> getFilteredMovieList(Availability availability) {
         List<Movie> filteredMovies = new ArrayList<>();
         for (Movie movie: movieList) {
             if (movie.getAvailability() == availability) {
@@ -100,4 +102,6 @@ public class Library {
         }
         return filteredMovies;
     }
+
+
 }
