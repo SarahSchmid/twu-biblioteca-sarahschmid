@@ -62,8 +62,7 @@ public class Library {
     }
 
     public void checkInBook(Book book) throws BookIsAlreadyAvailableException {
-        Availability availability = book.getAvailability();
-        if (availability == Availability.AVAILABLE) {
+        if (book.getAvailability() == Availability.AVAILABLE) {
             throw new BookIsAlreadyAvailableException();
         }
         book.setAvailability(Availability.AVAILABLE);
@@ -82,7 +81,6 @@ public class Library {
         }
         return filteredBooks;
     }
-
 
 
     public String showMovies(Availability availability) {
