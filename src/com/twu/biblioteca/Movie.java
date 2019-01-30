@@ -4,15 +4,15 @@ import com.twu.biblioteca.exception.RatingIsNotValidException;
 
 public class Movie {
 
-    private String name;
+    private String title;
     private String director;
     private int year;
     private int rating;
     private boolean rated;
     private Availability availability;
 
-    public Movie(String name, String director, int year, Availability availability) {
-        this.name = name;
+    public Movie(String title, String director, int year, Availability availability) {
+        this.title = title;
         this.director = director;
         this.year = year;
         this.availability = availability;
@@ -28,6 +28,14 @@ public class Movie {
             this.rating = rating;
             this.rated = true;
         }
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Availability getAvailability() {
+        return availability;
     }
 
     public int getRating() {
