@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db4edb5e-9342-4b77-bfd6-77721437a22f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/RatingIsNotValidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/CheckOutException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookValidationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="120" selection-start-line="11" selection-start-column="120" selection-end-line="11" selection-end-column="120" />
+            <state relative-caret-position="330">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+            <state relative-caret-position="300">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +44,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/RatingIsNotValidException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookValidationException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -79,9 +101,12 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/CheckOutException.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookValidationException.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/exception/RatingIsNotValidException.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
       </list>
     </option>
   </component>
@@ -127,6 +152,12 @@
             </path>
             <path>
               <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TWU_Biblioteca-master" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="biblioteca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -143,7 +174,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548775904178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548839148021" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -177,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.MovieTest.setRating_should_be_unrated_when_the_rating_is_0">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -199,22 +230,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.getBooklist_should_return_a_booklist_with_all_available_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibraryTest" />
-      <option name="METHOD_NAME" value="getBooklist_should_return_a_booklist_with_all_available_books" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -231,7 +246,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuTest.proceedCheckIn_should_return_the_chosen_book" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.setRating_should_be_unrated_when_the_rating_is_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -240,8 +255,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
-      <option name="METHOD_NAME" value="proceedCheckIn_should_return_the_chosen_book" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieTest" />
+      <option name="METHOD_NAME" value="setRating_should_be_unrated_when_the_rating_is_0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest.setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieTest" />
+      <option name="METHOD_NAME" value="setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.setRating_should_be_unrated_when_the_rating_is_0" />
+        <item itemvalue="JUnit.MovieTest.setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.All in biblioteca" />
         <item itemvalue="JUnit.LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" />
-        <item itemvalue="JUnit.LibraryTest.getBooklist_should_return_a_booklist_with_all_available_books" />
-        <item itemvalue="JUnit.MenuTest.proceedCheckIn_should_return_the_chosen_book" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +300,7 @@
       <updated>1548253092784</updated>
       <workItem from="1548253094245" duration="34073000" />
       <workItem from="1548687731293" duration="215000" />
-      <workItem from="1548688677507" duration="17271000" />
+      <workItem from="1548688677507" duration="19205000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1548254246537</created>
@@ -481,25 +512,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548775489154</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ssc / 1.12 / renamed Exception">
+      <created>1548775917127</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1548775917127</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ssc / 1.12 / print exception message on check in error">
+      <created>1548776075656</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1548776075656</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest_getFilteredBooklist_should_return_a_booklist_with_all_available_books - 2019.01.29 at 15h 48m 07s.xml">
-      <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_getFilteredBooklist_should_return_a_booklist_with_all_available_books - 2019.01.29 at 15h 49m 36s.xml">
-      <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_getFilteredBooklist_should_return_a_booklist_with_all_available_books - 2019.01.29 at 15h 51m 14s.xml">
-      <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_getFilteredBooklist_should_return_a_booklist_with_all_available_books - 2019.01.29 at 16h 05m 28s.xml">
-      <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_getFilteredBooklist_should_return_a_booklist_with_all_available_books - 2019.01.29 at 16h 06m 52s.xml">
-      <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_getFilteredBooklist_should_return_a_booklist_with_all_available_books - 2019.01.29 at 16h 09m 50s.xml">
       <configuration name="LibraryTest.getFilteredBooklist_should_return_a_booklist_with_all_available_books" configurationId="JUnit" />
     </history-entry>
@@ -515,9 +545,24 @@
     <history-entry file="All_in_biblioteca - 2019.01.29 at 16h 23m 52s.xml">
       <configuration name="All in biblioteca" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MovieTest_setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10 - 2019.01.30 at 09h 52m 17s.xml">
+      <configuration name="MovieTest.setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10 - 2019.01.30 at 09h 53m 28s.xml">
+      <configuration name="MovieTest.setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10 - 2019.01.30 at 09h 54m 33s.xml">
+      <configuration name="MovieTest.setRating_should_throw_a_RatingIsNotValidException_when_the_rating_is_not_between_1_and_10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_setRating_should_be_unrated_when_the_rating_is_0 - 2019.01.30 at 09h 59m 54s.xml">
+      <configuration name="MovieTest.setRating_should_be_unrated_when_the_rating_is_0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_setRating_should_be_unrated_when_the_rating_is_0 - 2019.01.30 at 10h 00m 13s.xml">
+      <configuration name="MovieTest.setRating_should_be_unrated_when_the_rating_is_0" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51559000" />
+    <option name="totallyTimeSpent" value="53493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -608,8 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ssc / 1.2 / added test case for empty booklist" />
-    <MESSAGE value="ssc / 1.2 / library returns booklist" />
     <MESSAGE value="ssc / 1.2 / print booklist" />
     <MESSAGE value="ssc / 1.2 / add author and year, fixed tests" />
     <MESSAGE value="ssc / 1.4 / added menu" />
@@ -633,7 +676,9 @@
     <MESSAGE value="ssc / 1.10 / proceed checkin" />
     <MESSAGE value="ssc / 1.10 / fixed availability bug" />
     <MESSAGE value="ssc / 1.10 / refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssc / 1.10 / refactoring" />
+    <MESSAGE value="ssc / 1.12 / renamed Exception" />
+    <MESSAGE value="ssc / 1.12 / print exception message on check in error" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssc / 1.12 / print exception message on check in error" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -751,16 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -816,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+        <state relative-caret-position="345">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -826,8 +861,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/BookValidationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/exception/RatingIsNotValidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
