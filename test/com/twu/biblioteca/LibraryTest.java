@@ -133,18 +133,16 @@ public class LibraryTest {
 
     @Test
     public void getFilteredBooklist_should_return_a_booklist_with_all_available_books() {
-        Book book = new Book("Moby Dick", "Herman Melville", 1851, Availability.AVAILABLE);
-
         List<Book> bookList = new ArrayList<>();
+        Book book = new Book("Moby Dick", "Herman Melville", 1851, Availability.AVAILABLE);
         bookList.add(book);
         bookList.add(new Book("Harry Potter", "J.K. Rowling", 1997, Availability.AVAILABLE));
         bookList.add(new Book("Lord of the Ring", "J.R.R. Tolkien", 1954, Availability.RESERVED));
+        Library library = new Library(bookList);
 
         List<Book> expected = new ArrayList<>();
         expected.add(book);
         expected.add(new Book("Harry Potter", "J.K. Rowling", 1997, Availability.AVAILABLE));
-
-        Library library = new Library(bookList);
 
         List<Book> result = library.getFilteredBookList(Availability.AVAILABLE);
 
@@ -157,12 +155,11 @@ public class LibraryTest {
 
     @Test
     public void getFilteredMovieList_should_return_a_list_with_all_available_movies() {
+        Library library = new Library();
         List<Movie> expected = new ArrayList<>();
         expected.add(new Movie("Gran Torino", "Clint Eastwood", 2008, Availability.AVAILABLE));
         expected.add(new Movie("Django Unchained", "Quentin Tarantino", 2013, Availability.AVAILABLE));
         expected.add(new Movie("Pulp Fiction", "Quentin Tarantino", 1994, Availability.AVAILABLE));
-
-        Library library = new Library();
 
         List<Movie> result = library.getFilteredMovieList(Availability.AVAILABLE);
 
@@ -174,5 +171,18 @@ public class LibraryTest {
 
         assertEquals(expected.get(2).getTitle(), result.get(2).getTitle());
         assertEquals(expected.get(2).getAvailability(), result.get(2).getAvailability());
+    }
+
+    @Test
+    public void showMovies_should_return_all_movies_that_are_available() {
+        Library library = new Library();
+        String expected =
+                "|Gran Torino                                       |Clint Eastwood      |2008|0 \n" +
+                "|Django Unchained                                  |Quentin Tarantino   |2013|0 \n" +
+                "|Pulp Fiction                                      |Quentin Tarantino   |1994|0 \n";
+
+        String result = library.showMovies(Availability.AVAILABLE);
+
+        assertEquals(expected, result);
     }
 }

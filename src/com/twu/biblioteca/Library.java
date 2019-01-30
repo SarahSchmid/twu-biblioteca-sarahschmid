@@ -47,8 +47,15 @@ public class Library {
         for (Book book : getFilteredBookList(availability)) {
                 books.append(book);
         }
-
         return books.toString();
+    }
+
+    public String showMovies(Availability availability) {
+        StringBuilder movies = new StringBuilder();
+        for (Movie movie : getFilteredMovieList(availability)){
+            movies.append(movie);
+        }
+        return movies.toString();
     }
 
     public void checkoutBook(Book book) throws BookIsNotAvailableException {

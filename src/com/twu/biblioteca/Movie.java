@@ -45,4 +45,9 @@ public class Movie {
     public boolean isRated() {
         return rated;
     }
+
+    @Override
+    public String toString() {
+        return String.format("|%-50s|%-20s|%-4s|%-2s%n", title, director, year, rating);
+    }
 }
