@@ -24,10 +24,10 @@ public class Menu {
             case 1:
                 return library.showBooks(Availability.AVAILABLE);
             case 2:
-                proceedCheckout(library, inputStream);
+                proceedBookCheckout(library, inputStream);
                 return "Thank you! Enjoy the book";
             case 3:
-                proceedCheckIn(library, inputStream);
+                proceedBookCheckIn(library, inputStream);
                 return "Thank you for returning the book";
             case 4:
                 return library.showMovies(Availability.AVAILABLE);
@@ -38,7 +38,7 @@ public class Menu {
         }
     }
 
-    public void proceedCheckout(Library library, InputStream inputStream) {
+    public void proceedBookCheckout(Library library, InputStream inputStream) {
         try {
             System.out.println("Please pick a book:");
             System.out.print(library.showBooks(Availability.AVAILABLE));
@@ -53,7 +53,7 @@ public class Menu {
         }
     }
 
-    public void proceedCheckIn(Library library, InputStream inputStream) {
+    public void proceedBookCheckIn(Library library, InputStream inputStream) {
         try {
             System.out.println("Which book would you like to return:");
             System.out.print(library.showBooks(Availability.RESERVED));

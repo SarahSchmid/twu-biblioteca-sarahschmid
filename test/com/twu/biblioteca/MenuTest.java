@@ -82,7 +82,7 @@ public class MenuTest {
     }
 
     @Test
-    public void proceedCheckout_should_checkout_the_chosen_book(){
+    public void proceedBookCheckout_should_checkout_the_chosen_book(){
         Menu menu = new Menu();
         List<Book> bookList = new ArrayList<>();
         bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Availability.AVAILABLE));
@@ -92,14 +92,14 @@ public class MenuTest {
 
         InputStream inputStream = provideInput("2");
 
-        menu.proceedCheckout(library, inputStream);
+        menu.proceedBookCheckout(library, inputStream);
 
         assertSame(expected.getAvailability(), Availability.RESERVED);
 
     }
 
     @Test
-    public void proceedCheckIn_should_return_the_chosen_book() throws Exception {
+    public void proceedBookCheckIn_should_return_the_chosen_book() {
         Menu menu = new Menu();
         List<Book> bookList = new ArrayList<>();
         bookList.add(new Book("Moby Dick", "Herman Melville", 1851, Availability.RESERVED));
@@ -109,7 +109,7 @@ public class MenuTest {
 
         InputStream inputStream = provideInput("2");
 
-        menu.proceedCheckIn(library, inputStream);
+        menu.proceedBookCheckIn(library, inputStream);
 
         assertSame(expected.getAvailability(), Availability.AVAILABLE);
     }
