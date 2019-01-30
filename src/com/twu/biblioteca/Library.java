@@ -84,4 +84,13 @@ public class Library {
         return filteredBooks;
     }
 
+    public List<Movie> getFilteredMovieList(Availability availability) {
+        List<Movie> filteredMovies = new ArrayList<>();
+        for (Movie movie: movieList) {
+            if (movie.getAvailability() == availability) {
+                filteredMovies.add(movie);
+            }
+        }
+        return filteredMovies;
+    }
 }
