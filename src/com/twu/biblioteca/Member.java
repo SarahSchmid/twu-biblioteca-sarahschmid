@@ -14,4 +14,10 @@ public class Member extends User {
         this.libraryNumber = libraryNumber;
         this.checkedOutItems = new ArrayList();
     }
+
+    public boolean login(String libraryNumber, String password) {
+        return (this.libraryNumber.equals(libraryNumber) &&
+                (libraryNumber.matches("\\d{3}-\\d{4}")) &&
+                (super.getPassword().equals(password)));
+    }
 }
