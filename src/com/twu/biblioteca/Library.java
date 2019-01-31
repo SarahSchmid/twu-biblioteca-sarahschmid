@@ -40,12 +40,13 @@ public class Library {
         this.movieList = Arrays.asList(movieList);
 
         User[] userList = {
-                new User("000-0000", "librarian", Role.LIBRARIAN),
-                new User("123-1234", "password", Role.USER),
-                new User("234-2345", "admin123", Role.USER),
-                new User("345-3456", "123456789", Role.USER),
-                new User("456-4567", "123456789", Role.USER)
+                new Librarian("librarian"),
+                new Member("123-1234", "password"),
+                new Member("234-2345", "admin123"),
+                new Member("345-3456", "123456789"),
+                new Member("456-4567", "123456789")
         };
+        this.userList = Arrays.asList(userList);
 
     }
 
