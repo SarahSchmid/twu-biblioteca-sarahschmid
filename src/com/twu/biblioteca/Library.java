@@ -14,6 +14,7 @@ public class Library {
 
     private List<Book> bookList;
     private List<Movie> movieList;
+    private List<User> userList;
 
 
     public Library(List<Book> bookList) {
@@ -37,6 +38,15 @@ public class Library {
                 new Movie("Pulp Fiction", "Quentin Tarantino", 1994, Availability.AVAILABLE)
         };
         this.movieList = Arrays.asList(movieList);
+
+        User[] userList = {
+                new User("000-0000", "librarian", Role.LIBRARIAN),
+                new User("123-1234", "password", Role.USER),
+                new User("234-2345", "admin123", Role.USER),
+                new User("345-3456", "123456789", Role.USER),
+                new User("456-4567", "123456789", Role.USER)
+        };
+
     }
 
     public String showBooks(Availability availability) throws EmptyBookListException {
