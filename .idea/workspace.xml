@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db4edb5e-9342-4b77-bfd6-77721437a22f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,10 +24,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
+                <element signature="e#250#251#0" expanded="true" />
                 <element signature="e#281#282#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <folding>
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MemberTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -108,11 +133,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/UserTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Role.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/User.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MemberTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Member.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" />
       </list>
     </option>
   </component>
@@ -173,7 +199,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548939135650" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548940561122" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -207,11 +233,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in biblioteca">
+  <component name="RunManager" selected="JUnit.LibrarianTest.login_should_return_true_if_the_password_is_correct">
     <configuration name="All in biblioteca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibrarianTest.login_should_return_false_if_the_password_is_incorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
+      <option name="METHOD_NAME" value="login_should_return_false_if_the_password_is_incorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibrarianTest.login_should_return_true_if_the_password_is_correct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
+      <option name="METHOD_NAME" value="login_should_return_true_if_the_password_is_correct" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -226,38 +284,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MemberTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberTest.login_should_return_false_if_the_library_number_does_not_matches_the_pattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MemberTest" />
-      <option name="METHOD_NAME" value="login_should_return_false_if_the_library_number_does_not_matches_the_pattern" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberTest.login_should_return_false_if_the_password_is_wrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MemberTest" />
-      <option name="METHOD_NAME" value="login_should_return_false_if_the_password_is_wrong" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -280,11 +306,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibrarianTest.login_should_return_true_if_the_password_is_correct" />
+        <item itemvalue="JUnit.LibrarianTest.login_should_return_false_if_the_password_is_incorrect" />
         <item itemvalue="JUnit.All in biblioteca" />
         <item itemvalue="JUnit.MemberTest" />
         <item itemvalue="JUnit.MemberTest.login_should_return_true_if_the_credentials_are_correct" />
-        <item itemvalue="JUnit.MemberTest.login_should_return_false_if_the_password_is_wrong" />
-        <item itemvalue="JUnit.MemberTest.login_should_return_false_if_the_library_number_does_not_matches_the_pattern" />
       </list>
     </recent_temporary>
   </component>
@@ -300,14 +326,7 @@
       <updated>1548253092784</updated>
       <workItem from="1548253094245" duration="34073000" />
       <workItem from="1548687731293" duration="215000" />
-      <workItem from="1548688677507" duration="36586000" />
-    </task>
-    <task id="LOCAL-00004" summary="ssc / 1.2 / added test case for empty booklist">
-      <created>1548333089439</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1548333089439</updated>
+      <workItem from="1548688677507" duration="37691000" />
     </task>
     <task id="LOCAL-00005" summary="ssc / 1.2 / library returns booklist">
       <created>1548338722687</created>
@@ -645,22 +664,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548935199161</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="ssc / 2.3 / implemented login method for member">
+      <created>1548939225594</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1548939225594</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MemberTest_login_should_return_false_if_the_library_number_is_wrong - 2019.01.31 at 13h 10m 25s.xml">
-      <configuration name="MemberTest.login_should_return_false_if_the_library_number_is_wrong" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MemberTest_login_should_return_false_if_the_library_number_does_not_matches_the_pattern - 2019.01.31 at 13h 12m 55s.xml">
-      <configuration name="MemberTest.login_should_return_false_if_the_library_number_does_not_matches_the_pattern" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MemberTest_login_should_return_false_if_the_password_is_wrong - 2019.01.31 at 13h 17m 23s.xml">
-      <configuration name="MemberTest.login_should_return_false_if_the_password_is_wrong" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MemberTest_login_should_return_false_if_the_password_is_wrong - 2019.01.31 at 13h 17m 56s.xml">
-      <configuration name="MemberTest.login_should_return_false_if_the_password_is_wrong" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MemberTest_login_should_return_false_if_the_password_is_wrong - 2019.01.31 at 13h 43m 43s.xml">
       <configuration name="MemberTest.login_should_return_false_if_the_password_is_wrong" configurationId="JUnit" />
     </history-entry>
@@ -679,9 +693,21 @@
     <history-entry file="All_in_biblioteca - 2019.01.31 at 13h 49m 02s.xml">
       <configuration name="All in biblioteca" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibrarianTest_login_should_return_false_if_the_password_is_incorrect - 2019.01.31 at 14h 13m 37s.xml">
+      <configuration name="LibrarianTest.login_should_return_false_if_the_password_is_incorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibrarianTest_login_should_return_false_if_the_password_is_incorrect - 2019.01.31 at 14h 14m 16s.xml">
+      <configuration name="LibrarianTest.login_should_return_false_if_the_password_is_incorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibrarianTest_login_should_return_true_if_the_password_is_correct - 2019.01.31 at 14h 15m 27s.xml">
+      <configuration name="LibrarianTest.login_should_return_true_if_the_password_is_correct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibrarianTest_login_should_return_true_if_the_password_is_correct - 2019.01.31 at 14h 16m 03s.xml">
+      <configuration name="LibrarianTest.login_should_return_true_if_the_password_is_correct" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70874000" />
+    <option name="totallyTimeSpent" value="71979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,7 +731,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -782,7 +808,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ssc / 1.10 / fixed availability bug" />
     <MESSAGE value="ssc / 1.10 / refactoring" />
     <MESSAGE value="ssc / 1.12 / renamed Exception" />
     <MESSAGE value="ssc / 1.12 / print exception message on check in error" />
@@ -807,7 +832,8 @@
     <MESSAGE value="ssc / 2.3" />
     <MESSAGE value="ssc / 2.3 / created user and roles" />
     <MESSAGE value="ssc / 2.3 / refactored user and roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssc / 2.3 / refactored user and roles" />
+    <MESSAGE value="ssc / 2.3 / implemented login method for member" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssc / 2.3 / implemented login method for member" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1081,17 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1111,9 +1126,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
+            <element signature="e#250#251#0" expanded="true" />
             <element signature="e#281#282#0" expanded="true" />
           </folding>
         </state>
@@ -1133,6 +1149,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
