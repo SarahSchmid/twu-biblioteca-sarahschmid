@@ -6,11 +6,11 @@ import com.twu.biblioteca.exception.MovieValidationException;
 
 import java.io.InputStream;
 import java.util.List;
-import java.util.Scanner;
+
+import static com.twu.biblioteca.IOHelper.readUserInput;
 
 
 public class Menu {
-
 
     public String showMainMenu(Library library, InputStream inputStream) throws EmptyBookListException {
         System.out.println("What do you wanna do next? " +
@@ -20,7 +20,7 @@ public class Menu {
                 "\n[4] List of available movies" +
                 "\n[5] Checkout movie" +
                 "\n[9] Quit");
-        int userInput = readUserInput(inputStream);
+        int userInput = IOHelper.readUserInput(inputStream);
 
         switch (userInput) {
             case 1:
@@ -103,10 +103,5 @@ public class Menu {
             throw new MovieValidationException();
         }
         return movieList.get(index);
-    }
-
-    private int readUserInput(InputStream inputStream) {
-        Scanner scanner = new Scanner(inputStream);
-        return scanner.nextInt();
     }
 }
