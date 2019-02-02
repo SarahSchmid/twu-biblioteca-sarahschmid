@@ -18,9 +18,9 @@ public class WelcomeTest {
     }
 
     @Test
-    public void pickLoginOption_should_print_the_login_options() {
+    public void showLoginOptionMessage_should_print_the_login_options() {
         Welcome welcome = new Welcome(stream);
-        welcome.pickLoginOption();
+        welcome.showLoginOptionMessage();
 
         Mockito.verify(stream).print("Please choose a login option: \n[1] Librarian\n[2] Member");
     }

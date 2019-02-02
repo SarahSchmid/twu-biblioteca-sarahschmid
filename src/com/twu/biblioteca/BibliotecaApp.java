@@ -5,12 +5,12 @@ public class BibliotecaApp {
     public static void main(String[] args) throws Exception {
         Library library = new Library();
         Welcome welcome = new Welcome(System.out);
-        Menu menu = new Menu();
+        MemberMenu memberMenu = new MemberMenu();
 
         welcome.showWelcomeMessage();
-        welcome.pickLoginOption();
+        welcome.showLoginOptionMessage();
 
-        System.out.print(menu.showMainMenu(library, System.in));
+        System.out.print(memberMenu.showMemberMenu(library, System.in));
 
     }
 }

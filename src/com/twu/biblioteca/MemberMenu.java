@@ -10,9 +10,9 @@ import java.util.List;
 import static com.twu.biblioteca.IOHelper.readUserInput;
 
 
-public class Menu {
+public class MemberMenu {
 
-    public String showMainMenu(Library library, InputStream inputStream) throws EmptyBookListException {
+    public String showMemberMenu(Library library, InputStream inputStream) throws EmptyBookListException {
         System.out.println("What do you wanna do next? " +
                 "\n[1] List of available books " +
                 "\n[2] Checkout book" +
