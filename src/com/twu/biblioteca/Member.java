@@ -17,7 +17,6 @@ public class Member extends User {
 
     public boolean login(String libraryNumber, String password) {
         return (this.libraryNumber.equals(libraryNumber) &&
-                (libraryNumber.matches("\\d{3}-\\d{4}")) &&
                 (super.getPassword().equals(password)));
     }
 

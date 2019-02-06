@@ -38,7 +38,7 @@ public class LoginMenu {
         return "This is not a valid login option.";
     }
 
-    public String loginMember(InputStream inputStream) throws MemberNotFoundException {
+    private String loginMember(InputStream inputStream) throws MemberNotFoundException {
         System.out.println("Please enter your Library Number:");
         String libraryNumber = IOHelper.readLineInput(inputStream);
 
@@ -58,7 +58,7 @@ public class LoginMenu {
         return "The login credentials for Member were wrong.";
     }
 
-    public String loginLibrarian(InputStream inputStream) {
+    private String loginLibrarian(InputStream inputStream) {
         System.out.println("Please enter the password for Librarian:");
         String password = IOHelper.readLineInput(inputStream);
 
