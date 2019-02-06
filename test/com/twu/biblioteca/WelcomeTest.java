@@ -16,12 +16,4 @@ public class WelcomeTest {
 
         Mockito.verify(stream).println("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
     }
-
-    @Test
-    public void showLoginOptionMessage_should_print_the_login_options() {
-        Welcome welcome = new Welcome(stream);
-        welcome.showLoginOptionMessage();
-
-        Mockito.verify(stream).print("Please choose a login option: \n[1] Librarian\n[2] Member");
-    }
 }

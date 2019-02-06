@@ -13,8 +13,4 @@ public class Welcome {
     public void showWelcomeMessage() {
         stream.println("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
     }
-
-    public void showLoginOptionMessage() {
-        stream.print("Please choose a login option: \n[1] Librarian\n[2] Member");
-    }
 }

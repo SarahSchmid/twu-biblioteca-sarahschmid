@@ -20,4 +20,8 @@ public class Member extends User {
                 (libraryNumber.matches("\\d{3}-\\d{4}")) &&
                 (super.getPassword().equals(password)));
     }
+
+    public String getLibraryNumber() {
+        return libraryNumber;
+    }
 }

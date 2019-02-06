@@ -14,8 +14,6 @@ public class Library {
 
     private List<Book> bookList;
     private List<Movie> movieList;
-    private List<User> userList;
-
 
     public Library(List<Book> bookList) {
         this.bookList = bookList;
@@ -38,15 +36,6 @@ public class Library {
                 new Movie("Pulp Fiction", "Quentin Tarantino", 1994, Availability.AVAILABLE)
         };
         this.movieList = Arrays.asList(movieList);
-
-        User[] userList = {
-                new Librarian("librarian"),
-                new Member("123-1234", "password"),
-                new Member("234-2345", "admin123"),
-                new Member("345-3456", "123456789"),
-                new Member("456-4567", "123456789")
-        };
-        this.userList = Arrays.asList(userList);
 
     }
 

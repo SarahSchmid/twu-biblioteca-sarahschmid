@@ -7,7 +7,7 @@ import com.twu.biblioteca.exception.MovieValidationException;
 import java.io.InputStream;
 import java.util.List;
 
-import static com.twu.biblioteca.IOHelper.readUserInput;
+import static com.twu.biblioteca.IOHelper.readSingleNumberInput;
 
 
 public class MemberMenu {
@@ -20,7 +20,7 @@ public class MemberMenu {
                 "\n[4] List of available movies" +
                 "\n[5] Checkout movie" +
                 "\n[9] Quit");
-        int userInput = IOHelper.readUserInput(inputStream);
+        int userInput = IOHelper.readSingleNumberInput(inputStream);
 
         switch (userInput) {
             case 1:
@@ -49,7 +49,7 @@ public class MemberMenu {
             System.out.print(library.showBooks(Availability.AVAILABLE));
 
             List<Book> bookList = library.getFilteredBookList(Availability.AVAILABLE);
-            int userInput = readUserInput(inputStream);
+            int userInput = readSingleNumberInput(inputStream);
             Book book = getChosenBookFromList(bookList, userInput);
 
             library.checkoutBook(book);
@@ -64,7 +64,7 @@ public class MemberMenu {
             System.out.print(library.showBooks(Availability.RESERVED));
 
             List<Book> bookList = library.getFilteredBookList(Availability.RESERVED);
-            int userInput = readUserInput(inputStream);
+            int userInput = readSingleNumberInput(inputStream);
             Book book = getChosenBookFromList(bookList, userInput);
 
             library.checkInBook(book);
@@ -88,7 +88,7 @@ public class MemberMenu {
             System.out.print(library.showMovies(Availability.AVAILABLE));
 
             List<Movie> movieList = library.getFilteredMovieList(Availability.AVAILABLE);
-            int userInput = readUserInput(inputStream);
+            int userInput = readSingleNumberInput(inputStream);
             Movie movie = getChosenMovieFromList(movieList, userInput);
 
             library.checkOutMovie(movie);

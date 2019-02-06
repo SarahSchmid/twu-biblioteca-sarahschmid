@@ -7,7 +7,7 @@ public class LibrarianMenu {
 
     public String showLibrarianMenu(Library library, InputStream inputStream) {
         System.out.println("Please choose an option:");
-        int input = IOHelper.readUserInput(inputStream);
+        int input = IOHelper.readSingleNumberInput(inputStream);
 
         if (input == 1) {
             return "placeholder";
