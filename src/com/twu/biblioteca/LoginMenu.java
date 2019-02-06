@@ -42,20 +42,19 @@ public class LoginMenu {
         System.out.println("Please enter your Library Number:");
         String libraryNumber = IOHelper.readLineInput(inputStream);
 
-        System.out.println("Please enter your Password:");
-        String password = IOHelper.readLineInput(inputStream);
-
         Member memberToLogin = memberList.stream()
                 .filter(member -> libraryNumber.equals(member.getLibraryNumber()))
                 .filter(member -> libraryNumber.matches("\\d{3}-\\d{4}"))
                 .findAny()
                 .orElseThrow(MemberNotFoundException::new);
 
+        System.out.println("Please enter your Password:");
+        String password = IOHelper.readLineInput(inputStream);
 
         if(memberToLogin.login(libraryNumber, password)){
             return "Member";
         }
-        return "The login credentials for Member were wrong.";
+        return "The login credentials for member were wrong.";
     }
 
     private String loginLibrarian(InputStream inputStream) {
@@ -65,6 +64,6 @@ public class LoginMenu {
         if (librarian.login(password)) {
             return "Librarian";
         }
-        return "The login credentials for librarian were wrong.";
+        return "The login credentials for the librarian were wrong.";
     }
 }
